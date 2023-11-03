@@ -11,10 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from avicii device
 $(call inherit-product, device/oneplus/avicii/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common droidx stuff.
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_avicii
+# Droidx specific build flags
+DROIDX_GAPPS := true
+DROIDX_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := droidx_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_avicii.mk
+    $(LOCAL_DIR)/droidx_avicii.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_avicii-eng \
-    lineage_avicii-user \
-    lineage_avicii-userdebug
+    droidx_avicii-eng \
+    droidx_avicii-user \
+    droidx_avicii-userdebug
